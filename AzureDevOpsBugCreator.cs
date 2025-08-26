@@ -88,7 +88,7 @@ namespace SeleniumTests
                     new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "See attached logs for detailed error." }
                 };
 
-                // Add payload to the request
+                // Add payload to the request, use Copilot to explain below step
                 request.AddParameter("application/json-patch+json", JsonConvert.SerializeObject(bugData), ParameterType.RequestBody);
 
                 // Execute the request and handle response
