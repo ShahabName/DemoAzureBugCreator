@@ -78,6 +78,7 @@ namespace SeleniumTests
                 request.AddHeader("Authorization", $"Basic {authToken}");
 
                 // Prepare the JSON patch payload for bug creation
+                // It is recommended not to use email here and instead add it to a config file.
                 var bugData = new[]
                 {
                     new { op = "add", path = "/fields/System.Title", value = bugTitle },
