@@ -37,7 +37,7 @@ namespace SeleniumTests
                     string.IsNullOrEmpty(project) ||
                     string.IsNullOrEmpty(personalAccessToken))
                 {
-                    throw new Exception("One or more required settings (AzureDevOpsUrl, Project, PersonalAccessToken) are missing in appsettings.json.");
+                    throw new InvalidOperationException("One or more required settings (AzureDevOpsUrl, Project, PersonalAccessToken) are missing in appsettings.json.");
                 }
             }
             catch (FileNotFoundException ex)
