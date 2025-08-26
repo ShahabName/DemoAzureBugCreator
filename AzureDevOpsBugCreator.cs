@@ -62,7 +62,7 @@ namespace SeleniumTests
         /// </summary>
         /// <param name="bugTitle">The title of the bug to create.</param>
         /// <remarks>
-        /// The bug will be assigned to shahab@tecoholic.com and have default description and repro steps.
+        /// The bug will be assigned to user@company.com and have default description and repro steps.
         /// </remarks>
         public void CreateBug(string bugTitle)
         {
