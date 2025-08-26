@@ -91,7 +91,7 @@ namespace SeleniumTests
                 // Add payload to the request, use Copilot to explain below step
                 request.AddParameter("application/json-patch+json", JsonConvert.SerializeObject(bugData), ParameterType.RequestBody);
 
-                // Execute the request and handle response
+                // Execute the request and handle response, updated for PR demos
                 IRestResponse response = client.Execute(request);
                 if (response.IsSuccessful)
                 {
